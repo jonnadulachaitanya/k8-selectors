@@ -7,7 +7,7 @@ spec:
   - name: nginx
     image: nginx:stable-perl
   tolerations:
-  - key: "env
+  - key: "env"
     operator: "Equal"
     value: "prod"
     effect: "NoSchedule"
