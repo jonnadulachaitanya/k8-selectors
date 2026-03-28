@@ -46,3 +46,9 @@ spec:
   containers:
   - name: nginx
     image: nginx:stable-perl
+  tolerations:
+  - key: "env"
+    operator: "Equal"
+    value: "prod"
+    effect: "NoSchedule"
+
