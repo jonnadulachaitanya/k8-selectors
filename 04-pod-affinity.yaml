@@ -42,7 +42,7 @@ spec:
             operator: In
             values:
             - affinity
-        topologyKey: topology.kubernetes.io/zone
+        topologyKey: topology.kubernetes.io/hostname #All nodes are in same zone, if we keep zone it will block all node in same zone
   containers:
   - name: nginx
     image: nginx:stable-perl
